@@ -42,9 +42,28 @@ public class Main {
          System.out.println("You're to young. Grow up.");
     }  
 
+    // 2. ELSE IF BLOCKS (chained conditionals)
+    // when you are accounting for multiple possible answers
+    int battery = 19;
+    // Always start the block with an if statement
+    if ( battery >= 95 ) {
+      System.out.println("Unplug your phone!");
+    }
+    else if ( battery <= 50 ) {
+      System.out.println("Plug in your phone soon...");
+    }
+    // ORDER MATTERS for else if blocks
+    // as soon as a condition is met, the rest of the chain is skipped
+    else if ( battery < 20 ) {
+      System.out.println("LOW POWER MODE");
+    }
+    else {
+      System.out.println("otherwise...blowup");
+    }
+    
 
 
 
-   }
 
-}
+   } // this closes the main METHOD
+} // This closes the main CLASS
