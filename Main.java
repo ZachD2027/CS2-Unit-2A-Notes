@@ -61,6 +61,57 @@ public class Main {
       System.out.println("otherwise...blowup");
     }
     
+    // COMPOUNT BOOLEAN EXPRESSIONS
+    // to test TWO conditions in an if statement
+    boolean cleanedRoom = false;
+    boolean didHomework = false;
+
+    // The AND (&&) operator joins two expressions
+    // only comes out to TRUE if BOTH ARE TRUE!
+    if( (cleanedRoom == true) && (didHomework == true) ) {
+      System.out.println("Go have fun!");
+    }
+
+    // The Or (||) operator joins two expressions
+    // comes out to TRUE if AT LEAST ONE is TRUE!
+    // (less restrictive conditions than AND)
+    if ( (cleanedRoom == true) || (didHomework == true) ) {
+      System.out.println("The less strict prents are fine with you going out!");
+    }
+
+    // The NOT (!) operator can be used to NEGATE
+    // a boolean expression
+    if ( ! (didHomework == true) ) {
+      System.out.println("Do your CodeCollab! The class is depending on you!");
+    }
+    // REMINDER: boolean VARIABLES can be used
+    // instead of full EXPRESSIONS (with relational operators)
+    if ( !didHomework ) {
+      System.out.println("You did NOT do your HW...");
+    }
+
+    // IMPORTANT NOTE ABOUT STRINGS:
+    // (and other Object data types)
+    // You can't use the == operator to CHECK EQUALITY
+    // instead use a String MEthod called .equals()
+    String course = "AP Computer Science";
+    if ( course.equals("AP Computer Science") ) {
+      System.out.println("Time to learn JAVA!");
+    }
+    // .equals is CASE-SENSITIVE
+    // itchecks every single character in order between the 2 Strings
+
+    String message1 = "Hello World";
+    String message2 = "Hello World";
+    if ( message1.equals(message2) ) {
+      System.out.println("The messages match perfectly!");
+    }
+    // You can mix String VARIABLES with String LITERALS
+    // ex) both are string LITERALS below
+    if ( "ho".equals("ho") ) {
+      System.out.println("ho :)");
+    }
+
 
 
 
